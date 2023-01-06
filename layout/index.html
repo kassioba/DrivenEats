@@ -20,7 +20,7 @@
         <div class="conteudo1">
             <span>Primeiro, seu prato</span>
             <div class="fileira-overflow">
-                <div class="fileira-comidas">
+                <div class="fileira-comidas fileira1">
                     <div class="comida1 a" onclick="selecionarComida('.a','.b')">
                         <img src="./ícones/frango.png" alt="">
                         <div class="nome-comida">Frango Yin Yang</div>
@@ -48,7 +48,7 @@
         <div class="conteudo2">
             <span>Agora, sua bebida</span>
             <div class="fileira-overflow">
-                <div class="fileira-comidas">
+                <div class="fileira-comidas fileira2">
                     <div class="comida2 g" onclick="selecionarComida2('.g','.h')">
                         <img src="./ícones/coca.png" alt="">
                         <div class="nome-comida">Coquinha Gelada</div>
@@ -76,7 +76,7 @@
         <div class="conteudo3">
             <span>Por fim, sua sobremesa</span>
             <div class="fileira-overflow">
-                <div class="fileira-comidas">
+                <div class="fileira-comidas fileira3">
                     <div class="comida3 m" onclick="selecionarComida3('.m','.n')">
                         <img src="./ícones/pudim.png" alt="">
                         <div class="nome-comida">Pudim</div>
@@ -103,10 +103,10 @@
         </div>
     </div>
     <div class="footer">
-        <button>
+        <a><button class="botão-desativado" onclick="teste()" disabled>
             <div>Selecione os 3 itens
         para fechar o pedido</div>
-        </button>
+        </button></a>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./script.js"></script>
