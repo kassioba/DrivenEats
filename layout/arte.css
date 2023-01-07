@@ -74,6 +74,9 @@ body{
     box-sizing: border-box;
     padding-left: 19px;
 }
+.fileira-overflow::-webkit-scrollbar {
+    Display: none
+}
 .fileira-comidas{
     display: flex;
     width: 548px; 
@@ -150,6 +153,7 @@ body{
     width: 144px;
     height: 19px;
     color: #000000;
+    display: flex;
 }
 .margin-top-7px {
     margin-top: 7px;
