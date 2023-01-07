@@ -21,27 +21,27 @@
             <span>Primeiro, seu prato</span>
             <div class="fileira-overflow">
                 <div class="fileira-comidas fileira1">
-                    <div class="comida1 a" onclick="selecionarComida('.a','.b')">
+                    <div class="comida1 a" data-test="dish" onclick="selecionarComida('.a','.b')">
                         <img src="./ícones/frango.png" alt="">
-                        <div class="nome-comida">Frango Yin Yang</div>
+                        <div class="nome-comida" data-test="item-name">Frango Yin Yang</div>
                         <div class="descricao-comida">Um pouco de batata, um pouco de salada</div>
-                        <div class="preco-comida margin-top-7px">R$&nbsp<div class="preco-numero">14,90</div>
+                        <div class="preco-comida margin-top-7px" data-test="item-price">R$&nbsp<div class="preco-numero">14,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado  b"></ion-icon>
                     </div>
-                    <div class="comida1 c" onclick="selecionarComida('.c','.d')">
+                    <div class="comida1 c" data-test="dish" onclick="selecionarComida('.c','.d')">
                         <img src="./ícones/frango.png" alt="">
-                        <div class="nome-comida">Carne Yin Yang</div>
+                        <div class="nome-comida" data-test="item-name">Carne Yin Yang</div>
                         <div class="descricao-comida">Um pouco de batata, um pouco de salada</div>
-                        <div class="preco-comida margin-top-7px">R$&nbsp<div class="preco-numero">17,90</div>
+                        <div class="preco-comida margin-top-7px" data-test="item-price">R$&nbsp<div class="preco-numero">17,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado  d"></ion-icon>
                     </div>
-                    <div class="comida1 e" onclick="selecionarComida('.e','.f')">
+                    <div class="comida1 e" data-test="dish" onclick="selecionarComida('.e','.f')">
                         <img src="./ícones/frango.png" alt="">
-                        <div class="nome-comida">Tofu Yin Yang</div>
+                        <div class="nome-comida" data-test="item-name">Tofu Yin Yang</div>
                         <div class="descricao-comida">Um pouco de batata, um pouco de salada</div>
-                        <div class="preco-comida margin-top-7px">R$&nbsp<div class="preco-numero">12,90</div>
+                        <div class="preco-comida margin-top-7px" data-test="item-price">R$&nbsp<div class="preco-numero">12,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado  f"></ion-icon>
                     </div>
@@ -52,27 +52,27 @@
             <span>Agora, sua bebida</span>
             <div class="fileira-overflow">
                 <div class="fileira-comidas fileira2">
-                    <div class="comida2 g" onclick="selecionarComida2('.g','.h')">
+                    <div class="comida2 g" data-test="drink" onclick="selecionarComida2('.g','.h')">
                         <img src="./ícones/coca.png" alt="">
-                        <div class="nome-comida">Coquinha Gelada</div>
+                        <div class="nome-comida" data-test="item-name">Coquinha Gelada</div>
                         <div class="descricao-comida">Lata 350ml</div>
-                        <div class="preco-comida margin-top-9px">R$&nbsp<div class="preco-numero">4,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price">R$&nbsp<div class="preco-numero">4,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado h"></ion-icon>
                     </div>
-                    <div class="comida2 i" onclick="selecionarComida2('.i','.j')">
+                    <div class="comida2 i" data-test="drink" onclick="selecionarComida2('.i','.j')">
                         <img src="./ícones/coca.png" alt="">
-                        <div class="nome-comida">Água benta</div>
+                        <div class="nome-comida" data-test="item-name">Água benta</div>
                         <div class="descricao-comida">Lata 350ml</div>
-                        <div class="preco-comida margin-top-9px">R$&nbsp<div class="preco-numero">8,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price">R$&nbsp<div class="preco-numero">8,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado j"></ion-icon>
                     </div>
-                    <div class="comida2 k" onclick="selecionarComida2('.k','.l')">
+                    <div class="comida2 k" data-test="drink" onclick="selecionarComida2('.k','.l')">
                         <img src="./ícones/coca.png" alt="">
-                        <div class="nome-comida">Dolly Quente</div>
+                        <div class="nome-comida" data-test="item-name">Dolly Quente</div>
                         <div class="descricao-comida">Lata 350ml</div>
-                        <div class="preco-comida margin-top-9px">R$&nbsp<div class="preco-numero">1,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price">R$&nbsp<div class="preco-numero">1,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado l"></ion-icon>
                     </div>
@@ -83,27 +83,27 @@
             <span>Por fim, sua sobremesa</span>
             <div class="fileira-overflow">
                 <div class="fileira-comidas fileira3">
-                    <div class="comida3 m" onclick="selecionarComida3('.m','.n')">
+                    <div class="comida3 m" data-test="dessert" onclick="selecionarComida3('.m','.n')">
                         <img src="./ícones/pudim.png" alt="">
-                        <div class="nome-comida">Pudim de leite</div>
+                        <div class="nome-comida" data-test="item-name">Pudim de leite</div>
                         <div class="descricao-comida">Apenas Pudim</div>
-                        <div class="preco-comida margin-top-9px">R$&nbsp<div class="preco-numero">7,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price">R$&nbsp<div class="preco-numero">7,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado n"></ion-icon>
                     </div>
-                    <div class="comida3 o" onclick="selecionarComida3('.o','.p')">
+                    <div class="comida3 o" data-test="dessert" onclick="selecionarComida3('.o','.p')">
                         <img src="./ícones/pudim.png" alt="">
-                        <div class="nome-comida">Pudim de coco</div>
+                        <div class="nome-comida" data-test="item-name">Pudim de coco</div>
                         <div class="descricao-comida">Apenas Pudim</div>
-                        <div class="preco-comida margin-top-9px">R$&nbsp<div class="preco-numero">9,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price">R$&nbsp<div class="preco-numero">9,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado p"></ion-icon>
                     </div>
-                    <div class="comida3 q" onclick="selecionarComida3('.q','.r')">
+                    <div class="comida3 q" data-test="dessert" onclick="selecionarComida3('.q','.r')">
                         <img src="./ícones/pudim.png" alt="">
-                        <div class="nome-comida">Pudim de abroba</div>
+                        <div class="nome-comida" data-test="item-name">Pudim de abroba</div>
                         <div class="descricao-comida">Apenas Pudim</div>
-                        <div class="preco-comida margin-top-9px"> R$&nbsp<div class="preco-numero">11,90</div>
+                        <div class="preco-comida margin-top-9px" data-test="item-price"> R$&nbsp<div class="preco-numero">11,90</div>
                         </div>
                         <ion-icon name="checkmark-circle" class="selecionado-simbolo desativado r"></ion-icon>
                     </div>
@@ -112,7 +112,7 @@
         </div>
     </div>
     <div class="footer">
-        <a><button class="botão-desativado" onclick="mensagem()" disabled>
+        <a><button class="botão-desativado" data-test="order-btn" onclick="mensagem()" disabled>
             <div>Selecione os 3 itens
         para fechar o pedido</div>
         </button></a>
