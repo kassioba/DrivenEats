@@ -112,10 +112,33 @@
         </div>
     </div>
     <div class="footer">
-        <a><button class="botão-desativado" data-test="order-btn" onclick="mensagem()" disabled>
+        <button class="botão-desativado" data-test="order-btn" onclick="checkout()" disabled>
             <div>Selecione os 3 itens
         para fechar o pedido</div>
-        </button></a>
+        </button>
+        </div>
+        <div class="checkout-bg desativado">
+            <div class="checkout">
+                <div class="texto-confirmar">Confirme seu pedido</div>
+                <div class="pedido">
+                    <div class="confirmar-comida">
+                        <div class="confirmar-nome-comida"></div>
+                        <div class="confirmar-preco-comida"></div>
+                    </div>
+                    <div class="confirmar-bebida">
+                        <div class="confirmar-nome-bebida"></div>
+                        <div class="confirmar-preco-bebida"></div>
+                    </div>
+                    <div class="confirmar-sobremesa">
+                        <div class="confirmar-nome-sobremesa"></div>
+                        <div class="confirmar-preco-sobremesa"></div>
+                    </div>
+                    <div class="confirmar-total">TOTAL<div class="confirmar-preco-total"></div>
+                    </div>
+                </div>
+                <a><button class="confirmar-pedido" onclick="mensagem()">Tudo certo, pode pedir!</button></a>
+                <button class="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./css e script/script.js"></script>

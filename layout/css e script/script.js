@@ -84,6 +84,55 @@ function selecionarComida3(clicado, clicadoSimbolo) {
     botão.innerHTML = "Fechar pedido";
   }
 }
+function checkout() {
+  const checkout = document.querySelector(".checkout-bg");
+  checkout.classList.add("ativado");
+
+  const pratoEscolhido = document.querySelector(
+    ".fileira1 .selecionado .nome-comida"
+  );
+  const bebidaEscolhida = document.querySelector(
+    ".fileira2 .selecionado .nome-comida"
+  );
+  const sobremesaEscolhida = document.querySelector(
+    ".fileira3 .selecionado .nome-comida"
+  );
+
+  const valorPrato = document.querySelector(
+    ".fileira1 .selecionado .preco-numero"
+  );
+  const valorBebida = document.querySelector(
+    ".fileira2 .selecionado .preco-numero"
+  );
+  const valorSobremesa = document.querySelector(
+    ".fileira3 .selecionado .preco-numero"
+  );
+
+  document.querySelector(".confirmar-nome-comida").innerHTML =
+    pratoEscolhido.textContent;
+  document.querySelector(".confirmar-preco-comida").innerHTML =
+    valorPrato.textContent;
+
+  document.querySelector(".confirmar-nome-bebida").innerHTML =
+    bebidaEscolhida.textContent;
+  document.querySelector(".confirmar-preco-bebida").innerHTML =
+    valorBebida.textContent;
+
+  document.querySelector(".confirmar-nome-sobremesa").innerHTML =
+    sobremesaEscolhida.textContent;
+  document.querySelector(".confirmar-preco-sobremesa").innerHTML =
+    valorSobremesa.textContent;
+
+  const valorTotal =
+    Number(valorPrato.textContent.replace(",", ".")) +
+    Number(valorBebida.textContent.replace(",", ".")) +
+    Number(valorSobremesa.textContent.replace(",", "."));
+
+  document.querySelector(".confirmar-preco-total").innerHTML = `R$ ${valorTotal
+    .toFixed(2)
+    .replace(".", ",")}`;
+}
+
 function mensagem() {
   const zap = document.querySelector("a");
 
@@ -120,11 +169,8 @@ function mensagem() {
   const zapLink =
     "https://wa.me/5581996060365?text=" + encodeURIComponent(urlDecoded);
 
-  const seleção1 = document.querySelector(".fileira1 .selecionado");
-  const seleção2 = document.querySelector(".fileira2 .selecionado");
-  const seleção3 = document.querySelector(".fileira3 .selecionado");
-
-  if ((seleção1 && seleção2 && seleção3) !== null) {
-    zap.setAttribute("href", zapLink);
-  }
+  zap.setAttribute("href", zapLink);
+}
+function cancelar() {
+  document.querySelector(".checkout-bg").classList.remove("ativado");
 }
