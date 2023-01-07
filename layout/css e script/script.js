@@ -84,6 +84,7 @@ function selecionarComida3(clicado, clicadoSimbolo) {
     botão.innerHTML = "Fechar pedido";
   }
 }
+
 function checkout() {
   const checkout = document.querySelector(".checkout-bg");
   checkout.classList.add("ativado");
@@ -133,6 +134,14 @@ function checkout() {
     .replace(".", ",")}`;
 }
 
+let nomeCliente;
+let endereçoCliente;
+
+function nomeEndereço() {
+  nomeCliente = prompt("Qual é o seu nome?");
+  endereçoCliente = prompt("Qual é o seu endereço?");
+}
+
 function mensagem() {
   const zap = document.querySelector("a");
 
@@ -165,9 +174,11 @@ function mensagem() {
     pratoEscolhido.textContent
   }\n- Bebida: ${bebidaEscolhida.textContent}\n- Sobremesa: ${
     sobremesaEscolhida.textContent
-  }\nTotal: R$ ${valorTotal.toFixed(2)}`;
+  }\nTotal: R$ ${valorTotal.toFixed(
+    2
+  )}\n\nNome: ${nomeCliente}\nEndereço: ${endereçoCliente}`;
   const zapLink =
-    "https://wa.me/5581996060365?text=" + encodeURIComponent(urlDecoded);
+    "https://wa.me/5581989342512?text=" + encodeURIComponent(urlDecoded);
 
   zap.setAttribute("href", zapLink);
 }
