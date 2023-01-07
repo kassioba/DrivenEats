@@ -178,7 +178,7 @@ function mensagem() {
     2
   )}\n\nNome: ${nomeCliente}\nEndereço: ${endereçoCliente}`;
   const zapLink =
-    "https://wa.me/5581989342512?text=" + encodeURIComponent(urlDecoded);
+    "https://wa.me/5511999999999?text=" + encodeURIComponent(urlDecoded);
 
   zap.setAttribute("href", zapLink);
 }
