@@ -107,8 +107,6 @@ function mensagem() {
     ".fileira3 .selecionado .preco-numero"
   );
 
-  console.log(valorPrato.textContent);
-
   const valorTotal =
     Number(valorPrato.textContent.replace(",", ".")) +
     Number(valorBebida.textContent.replace(",", ".")) +
